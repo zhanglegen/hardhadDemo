@@ -2,6 +2,8 @@ require("dotenv").config();
 require("@nomicfoundation/hardhat-ethers");
 require("@nomicfoundation/hardhat-toolbox");
 require("hardhat-deploy");
+// 新增：引入 OpenZeppelin 升级插件
+require("@openzeppelin/hardhat-upgrades"); 
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
