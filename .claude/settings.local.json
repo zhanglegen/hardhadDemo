@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run compile)",
+      "Bash(npx hardhat deploy:*)",
+      "Bash(pkill:*)",
+      "Bash(npm run test)",
+      "Bash(npm run deploy:local:*)",
+      "Bash(npm run test:coverage:*)",
+      "Bash(npm run gas)",
+      "Bash(npm run flatten:*)",
+      "Bash(npm run clean)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

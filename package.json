@@ -1,0 +1,55 @@
+{
+  "name": "hardhadDemo",
+  "version": "1.0.0",
+  "description": "Production-ready Hardhat project with hardhat-deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "node": "hardhat node",
+    "deploy:local": "hardhat deploy --network localhost",
+    "deploy:sepolia": "hardhat deploy --network sepolia",
+    "deploy:mainnet": "hardhat deploy --network mainnet",
+    "deploy:tags": "hardhat deploy --tags",
+    "export:local": "hardhat export --export-all deployments/localhost.json --network localhost",
+    "export:sepolia": "hardhat export --export-all deployments/sepolia.json --network sepolia",
+    "verify:sepolia": "hardhat etherscan-verify --network sepolia",
+    "verify:mainnet": "hardhat etherscan-verify --network mainnet",
+    "console": "hardhat console",
+    "flatten": "hardhat flatten",
+    "size": "hardhat size-contracts",
+    "gas": "set REPORT_GAS=true&&hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.2",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.1",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@types/node": "^24.7.1",
+    "chai": "^4.5.0",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.26.4",
+    "hardhat-deploy": "^1.0.4",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solidity-coverage": "^0.8.16",
+    "typechain": "^8.3.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "dotenv": "^17.2.3"
+  },
+  "keywords": [
+    "hardhat",
+    "hardhat-deploy",
+    "ethereum",
+    "solidity",
+    "defi",
+    "smart-contracts"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
