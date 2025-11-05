@@ -5,18 +5,18 @@ const path = require("path");
 
 module.exports = async () => {
     //const [signer] = await ethers.getSigners();
-     const { save } = deployments;
+    const { save } = deployments;
     const { deployer } = await getNamedAccounts(); // deployer 是地址字符串（如 0x123...）
     const signers = await ethers.getSigners();
     const deployerSigner = signers[0]; // 第 0 个签名者对应 deployer
 
     //1、获取已经部署的MetaNode合约地址
-    const initMetaNodeToken = await ethers.getContractFactory('MetaNode')
-    initMetaNodeTokenDeploy = await initMetaNodeToken.deploy()
-    await initMetaNodeTokenDeploy.waitForDeployment();
-    const metaNodeTokenAddress = await initMetaNodeTokenDeploy.getAddress();
-    console.log("MetaNode地址："+metaNodeTokenAddress);
-    //const metaNodeTokenAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
+    // const initMetaNodeToken = await ethers.getContractFactory('MetaNode')
+    // initMetaNodeTokenDeploy = await initMetaNodeToken.deploy()
+    // await initMetaNodeTokenDeploy.waitForDeployment();
+    // const metaNodeTokenAddress = await initMetaNodeTokenDeploy.getAddress();
+    // console.log("MetaNode地址："+metaNodeTokenAddress);
+    const metaNodeTokenAddress = "0xa76c52054D6F4Deb2e90fA12ecD6dA221F801c8E";
 
 
     // 2. 部署代理合约
