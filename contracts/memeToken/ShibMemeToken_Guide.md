@@ -115,7 +115,7 @@ main()
 npx hardhat run scripts/deploy.js --network goerli
 ```
 
-### 步骤 4: 配置交易参数
+### 步骤 4: 配置交易参数 1
 
 部署后，配置交易参数:
 

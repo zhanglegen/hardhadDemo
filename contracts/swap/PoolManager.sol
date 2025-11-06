@@ -8,6 +8,7 @@ import "./interfaces/IPool.sol";
 
 contract PoolManager is Factory, IPoolManager {
     Pair[] public pairs;
+    //ssss
 
     function getPairs() external view override returns (Pair[] memory) {
         return pairs;
